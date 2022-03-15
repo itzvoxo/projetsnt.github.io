@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home-container {
+    min-height: 100vh;
+    background: url(images/bg.jpg);
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 40px;
+    overflow: hidden;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.nav-links a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+
+.nav-links a:hover {
+    transform: translateY(-100%);
+}
+
+.burger {
+    display: none;
+}
+
+.landing {
+    line-height: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.big-title {
+    width: 40%;
+    color: white;
+    font-size: 80px;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 100;
+}
+
+.delivery-link {
+    line-height: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    width: 70px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.scroll-text {
+    color: white;
+    position: relative;
+    transition: transform 0.4s;
+}
+
+.scroll-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+
+.scroll-text:hover {
+    transform: translateY(-100%);
+}
+
+.scroll-icon {
+    font-size: 25px;
+    color: white;
+}
+
